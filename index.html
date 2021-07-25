@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CineWorld</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css"></style>
+    <link rel="shortcut icon" type="image/icon" href="./img/favicon.ico"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/effects.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <h1 class="logo-1">C i n e  w o r l d</h1>     
+     <div id= "carrito">
+        <img id="pochoclos" src="img/pochoclos.png">
+        <h5>PELICULA:<input style="height:20px; width:20px" id="total" value="0" readonly></h5>
+    </div>  
+</header>
+<nav class="menuCSS3">
+    <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="#">Géneros</a>
+            <ul>
+                <li><a href="#"><button onClick='tipoPelicula("28")'>Acción</li></button></a>
+                <li><a href="#"><button onClick='tipoPelicula("12")'>Aventura</li></button></a>
+                <li><a href="#"><button onClick='tipoPelicula(16)'>Animación</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("35")'>Comedia</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("80")'>Crimen</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("99")'>Documentales</li></button></a>
+                <li><a href="#"><button onClick='tipoPelicula("18")'>Drama</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("10751")'>Familia</li></button></a>
+                <li><a href="#"><button onClick='tipoPelicula("14")'>Fantasia</li></button></a>
+                <li><a href="#"><button onClick='tipoPelicula("36")'>Historia</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("27")'>Terror</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("10402")'>Musicales</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("9648")'>Misterio</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("10749")'>Romance</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("878")'>C.Ficcion</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("53")'>Suspenso</button></a></li>
+                <li><a href="#"><button onClick='tipoPelicula("37")'>Western</button></a></li>
+            </ul>
+        </li>
+        <li><a href="./compartir.html">Compartir</a></li>
+        <li><a href="./contacto.html">Donde estamos</a></li>
+    </ul>
+</nav>
+<nav id="nav2">
+    <section class="webdesigntuts-workshop">
+        <input class="input" type='text' id='movieName' placeholder="Búsqueda por nombre">		    	
+        <button onClick='traer()'>Buscar</button>
+        <button id="antPagina" onClick="sigPagina()">Pag Ant</button>
+        <button id="sigPagina" onClick="antPagina()">Pag Sig</button>
+        <button id="numPagina" >Pagina 1</button>
+        <h4 class="mt-5"><span id="resultado"></span></h4>
+    </section>
+</nav>
+<main class="container">
+    <div class="row">
+        <div id="items" class="col-xl-6">   
+            <!-- Acá vienen los objetos desde la API -->
+        </div>
+        <div id="aside" class="col-xl-4">
+            <p>ATENCION!!</p>
+            <p>Es es nuestro espacio publicidad. Publicite con nosotros a un buen precio. Contactenos y armaremos un presupuesto a medida. Si no queda satisfecho, le devolvemos su dinero.</p>
+            <img src="./img/publi.jpg" alt="">
+        </div>
+    </div>    
+</main>
+
+<footer>
+    <p>@Todos los derechos reservados: Gaston Alanis - David Verón</p>
+</footer>
+</html>
+<script type="text/javascript" src="./js/javacode.js"></script>
+<script type="text/javascript" src="./js/carrito.js" ></script>
